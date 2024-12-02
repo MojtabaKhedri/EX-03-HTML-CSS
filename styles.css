@@ -1,0 +1,169 @@
+/* .name1.name2
+means a div or an element having both classes together, for example: */
+.name1.name2 {
+    color: aliceblue;
+    background-color: green;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+}
+
+.name1 {
+    color: black;
+    background-color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+}
+
+.name2 {
+    color: white;
+    background-color: red;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+}
+
+.border {
+    border-width: 3px;
+    border-style: solid;
+    border-color: palevioletred;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+/* .name1 .name2
+means a div or an element which has a class name1 and any of its child nodes having class name2 */
+.name3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b9faf2;
+    backdrop-filter: blur(50px)
+}
+
+.name3 .name4 {
+    display: flex;
+    width: 626px;
+    height: 426px;
+    background-image: url(./abstract-blue-geometric-shapes-background_1035-17545.jpg);
+    background-repeat: no-repeat;
+    border: 10px;
+    border-style: ridge;
+    border-radius: 20px;
+    border-color: rgba(168, 168, 235, 0.836);
+    background-position: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-weight: 400px;
+}
+
+.contain56 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* In CSS, .name1, .name2 is a grouping selector. It allows you to apply the same styles to multiple elements with different classes, without repeating the same CSS rules for each class. */
+.name5,
+.name6 {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    background-color: bisque;
+    margin: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 2px;
+    border-color: burlywood;
+    border-radius: 20px;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* In CSS, .name > .name2 is a child combinator selector. It targets an element with the class .name2 that is a direct child of an element with the class .name.
+like .name .name2 */
+.parent {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: yellowgreen;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.txt {
+    position: absolute;
+    display: inline-block;
+    width: 300px;
+    height: 100px;
+    background-color: yellowgreen;
+    border-radius: 10px;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: black;
+    font-weight: 400px;
+}
+
+.parent>.child {
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    background-color: gold;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: 400px;
+    align-content: center;
+}
+
+.name02+.name03 {
+    width: 100%;
+    height: 50px;
+    background-color: #b9faf2;
+    backdrop-filter: blur(50px);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    padding-top: 20px;
+}
+
+.name003~.name004 {
+    width: 100%;
+    height: 300px;
+    background-color: #ffe41b;
+    backdrop-filter: blur(50px);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    align-content: center;
+}
+
+body {
+    overflow-x: hidden;
+}
